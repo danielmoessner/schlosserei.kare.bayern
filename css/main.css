@@ -1,0 +1,393 @@
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+body {
+  position: relative;
+  text-transform: lowercase;
+}
+
+/* line 6, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+h2:before {
+  content: "||";
+  left: -5px;
+  position: relative;
+}
+
+/* line 12, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+h2:after {
+  content: "||";
+  left: 5px;
+  position: relative;
+}
+
+/* line 18, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+.budwebsites {
+  color: green !important;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* line 22, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+.budwebsites :hover {
+  text-decoration: none;
+}
+
+/* line 26, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+.link-transform {
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* line 29, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/base/_base.scss */
+.link-transform :hover {
+  text-decoration: none;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_header.scss */
+header {
+  height: 100vh;
+  background-image: url("../img/26.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 10, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_header.scss */
+header div {
+  border: 3px solid orange;
+}
+
+/* line 13, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_header.scss */
+header h1 {
+  font-size: 6rem;
+  padding: 0;
+  margin: 1rem;
+  color: orange;
+  text-align: center;
+}
+
+/* line 20, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_header.scss */
+header .headerh1xs {
+  font-size: 36px;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_footer.scss */
+footer {
+  background-color: #f8f8f8;
+}
+
+/* line 3, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_footer.scss */
+footer nav {
+  padding: 20px;
+}
+
+/* line 6, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_footer.scss */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 2, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main section {
+  padding: 30px 0;
+  background-color: darkorange;
+}
+
+/* line 5, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* line 10, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main .card {
+  background-color: orange;
+}
+
+/* line 13, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section1 {
+  background-image: linear-gradient(72deg, darkorange, orange) !important;
+}
+
+/* line 14, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section1 > div > p {
+  text-align: center;
+}
+
+/* line 18, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section1 h3 {
+  text-align: center;
+}
+
+/* line 23, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section2 .reduced-padding-left {
+  padding-left: 0;
+  padding-right: 7.5px;
+}
+
+/* line 27, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section2 .reduced-padding-right {
+  padding-right: 0;
+  padding-left: 7.5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 32, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section2 .reduced-padding-left-inmd {
+    padding-left: 0;
+    padding-right: 7.5px;
+  }
+  /* line 36, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section2 .reduced-padding-right-inmd {
+    padding-right: 0;
+    padding-left: 7.5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 42, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section2 .reduced-padding-left-abmd {
+    padding-left: 0;
+    padding-right: 7.5px;
+  }
+  /* line 46, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section2 .reduced-padding-right-abmd {
+    padding-right: 0;
+    padding-left: 7.5px;
+  }
+  /* line 50, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section2 .no-padding-abmd {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 56, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section3 {
+  height: 220px;
+}
+
+/* line 60, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section4 .secondary-image {
+  border-radius: 0px;
+}
+
+/* line 63, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section4 .no-padding-left {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 766px) {
+  /* line 67, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section4 .no-padding-left-sm-up {
+    padding-left: 0;
+  }
+  /* line 70, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+  main #section4 .no-padding-sm-up {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* line 76, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 {
+  height: 700px;
+  background-image: linear-gradient(72deg, orange, darkorange) !important;
+}
+
+/* line 80, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .center-column {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 84, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .contact-address {
+  font-size: 18px;
+  border-radius: 2px;
+  background-color: darkorange;
+  height: 470px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* line 91, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .contact-address .contact-buttons {
+  padding-top: 10px;
+}
+
+/* line 94, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .contact-address address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+
+/* line 102, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .contact-address p {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+/* line 106, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main #section5 .contact-address button, main #section5 .contact-address a {
+  margin-bottom: 12px;
+}
+
+/* line 111, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_main.scss */
+main .parallax {
+  color: white;
+  background: url("../img/20.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_nav.scss */
+nav {
+  border-radius: 0px !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  border-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_video.scss */
+#video-div {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  max-width: 540px;
+  display: flex;
+  align-items: flex-start;
+  max-height: 70vh;
+}
+
+/* line 10, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_video.scss */
+#video-div video {
+  flex: 1;
+  width: 90%;
+}
+
+/* line 14, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/layout/_video.scss */
+#video-div .close-span {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0 5px;
+  background: red;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_blocks.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 5, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+/* line 12, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card span.card-title {
+  width: 100%;
+  overflow: hidden;
+  color: #060503;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 21, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 25, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+/* line 32, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card span.card-title {
+  padding-left: 16px;
+}
+
+/* line 35, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-content {
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+/* line 40, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-content p {
+  margin: 0;
+  padding: 10px 16px;
+  color: inherit;
+}
+
+/* line 45, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-content span.card-title {
+  line-height: 48px;
+}
+
+/* line 48, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+}
+
+/* line 52, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-action a {
+  color: #ffab40;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* line 58, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_cards.scss */
+.card .card-action a:hover {
+  color: #ffd8a6;
+  text-decoration: none;
+}
+
+/* line 1, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_tortugafooter.scss */
+.tortugafooter {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* line 4, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_tortugafooter.scss */
+.tortugafooter img {
+  max-height: 50px;
+}
+
+/* line 7, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_tortugafooter.scss */
+.tortugafooter .tortugalink {
+  color: #A50800;
+}
+
+/* line 10, D:/BIBLIOTHEKEN/Dokumente/Dokumente/Tortuga Projekte/Webseiten/Kare/schlosserei/scss/modules/_tortugafooter.scss */
+.tortugafooter .tortugalink:hover {
+  color: #720600;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/main.map */

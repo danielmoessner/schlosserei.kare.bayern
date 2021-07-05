@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kare</title>
+	<link rel="icon" href="img/icon.png">
+	<!-- Zur korrekten Darstellung von Umlauten -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Das neueste kompilierte und minimierte CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Das neueste kompilierte und minimierte JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Meta damit Bootstrap auf phones resized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Das eigene Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Das eigene Script -->
+	<script type="text/javascript">
+		jQuery(function(){
+			// navbar stuff
+			$(document).scroll(function() {
+				var s = $(document).scrollTop();
+				if (s > $(window).height()-50){
+					$("#navbar-wrapper").removeClass("full-width");
+				}
+				else {
+					$("#navbar-wrapper").addClass("full-width");
+				}
+			});
+			// popover stuff
+			$('[data-toggle="popover"]').popover();
+			// smooth scrolling
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top - 20
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+		// hidden number stuff
+		function showDiv(){
+			if (document.getElementById("hidden-number").style.display != 'block'){
+				document.getElementById("hidden-number").style.display = 'block';
+				document.getElementById("contact-contact").style.height = '550px';
+			} else{
+				document.getElementById("hidden-number").style.display = 'none';
+				document.getElementById("contact-contact").style.height = '460px';
+			}
+		};
+	</script>
+</head>
+<body data-spy="scroll" data-target="#mynav" data-offset="500">
+	<!-- VIDEO -->
+	<div id="video-div">
+		<video src="vid/kare-vid.mp4" autoplay controls>
+			Ihr Browser kann dieses Video leider nicht wiedergeben.<br/>
+		</video>
+		<span class="close-span" onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'>X</span>
+	</div>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container full-width" id="navbar-wrapper">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapsedNav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Kare</a>
+			</div>
+			<div class="collapse navbar-collapse collapsedNav" id="mynav">
+				<ul class="nav navbar-nav nav-links navbar-right">
+					<li><a href="#header">Startseite</a></li>
+					<li><a href="#section2">Meine Projekte</a></li>
+					<li><a href="#section4">Sonderanfertigungen</a></li>
+					<li><a href="#section5">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- HEADER -->
+	<header id="header">
+		<div>
+			<h1 class="visible-xs headerh1xs">
+				KARE<br>MÜLLER
+			</h1>
+			<h1 class="hidden-xs">
+				KARE MÜLLER
+			</h1>
+		</div>
+	</header>
+	<!-- MAIN -->
+	<main>
+		<section id="section1">
+			<div class="container">
+				<h2>ich erledige für sie gängige schweißarbeiten</h2>
+				<p>
+					<b>als bestens ausgestatteter und kompetenter fachbetrieb sorge ich für präzise umsetzung<br>
+						individuellen anforderungen und wünschen sind keine grenzen gesetzt<br>
+						alle schweißgeräte sind mobil - schweißen vor ort ist möglich</b>
+					</p>
+					<br>
+					<div class="row">
+						<div class="col-md-4">
+							<h3>tig/wig schweißen</h3>
+							<p>dient als hochwertiges schweissverfahren bei metallen und legierungen wie kupfer, chrom-nickel-stahl, magnesium und titan<br>einsatzgebiete: maschinenbau, apparatebau und rohrleitungen</p>
+						</div>
+						<div class="col-md-4">
+							<h3>schweißen von aluminium</h3>
+							<p><img class="img-responsive" src="img/21.jpg"></p>
+						</div>
+						<div class="col-md-4">
+							<h3>mig/mag schweißen</h3>
+							<p>bietet optimale schweissergebnisse bei alu, edelstahl, speziallegierungen sowie massiven stahlkonstruktionen<br>einsatzgebiete: apparatebau, karosseriebau und maschinenbau</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section2">
+				<div class="container">
+					<h2>meine projekte</h2>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-xs-12 no-padding-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/6.jpg">
+										</div>
+										<span class="card-title">tiefgaragenvordach</span>
+										<div class="card-content">
+											<p>spezial anfertigung eines vordaches für eine tiefgarage</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 reduced-padding-left-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/16.jpg">
+										</div>
+										<span class="card-title">gartenzäune</span>
+										<div class="card-content">
+											<p>gartenzäune in jedem design</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 reduced-padding-right-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/7.jpg">
+										</div>
+										<span class="card-title">vordächer</span>
+										<div class="card-content">
+											<p>vordächer für häuser jeglicher art</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 reduced-padding-left-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/14.jpg">
+										</div>
+										<span class="card-title">geländer</span>
+										<div class="card-content">
+											<p>geländerfertigung nach maß</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 reduced-padding-right-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/13.jpg">
+										</div>
+										<span class="card-title">schiebetor</span>
+										<div class="card-content">
+											<p>funktionales schiebetor</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 no-padding-abmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/15.jpg">
+										</div>
+										<span class="card-title">kellerabgangsüberdachung</span>
+										<div class="card-content">
+											<p>spezial anfertigung zum schutz und verbesserten aussehens des kellerabgangs</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-12 reduced-padding-left-inmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/11.jpg">
+										</div>
+										<span class="card-title">blumenständer</span>
+										<div class="card-content">
+											<p>individuelles design für alles was man sich vorstellen kann</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-12 reduced-padding-right-inmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/9.jpg">
+										</div>
+										<span class="card-title">auffahrrampe</span>
+										<div class="card-content">
+											<p>sichere auffahrrampe zur vereinfachung des auffahren</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-12 reduced-padding-right-inmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/5.jpg">
+										</div>
+										<span class="card-title">unterlenkerfanghaken</span>
+										<div class="card-content">
+											<p>sicheres anschweißen neuer unterlenkerfanghaken von traktoren ist hier gewährleistet</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-12 reduced-padding-right-inmd">
+									<div class="card">
+										<div class="card-image">
+											<img class="img-responsive" src="img/18.jpg">
+										</div>
+										<span class="card-title">mauerwerkstabilisierung</span>
+										<div class="card-content">
+											<p>kundenspezifische mauerstabilisierung</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section3" class="parallax hidden-xs">
+			</section>
+			<section id="section4">
+				<div class="container">
+					<h2>reparatur, sonderanfertigungen und mehr</h2>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 no-padding-left-sm-up">
+							<div class="card">
+								<div class="card-image">
+									<img class="img-responsive" src="img/33.jpg">
+									<img class="img-responsive secondary-image" src="img/31.jpg">
+									<img class="img-responsive secondary-image" src="img/32.jpg">
+								</div>
+								<span class="card-title">fahrradrahmen reparatur</span>
+								<div class="card-content">
+									<p>sämtliche reparatur schweißarbeiten von aluminium u.a. fahrradrahmen</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 no-padding-sm-up">
+							<div class="card hidden-xs">
+								<div class="card-image">
+									<img class="img-responsive" src="img/1.jpg"">
+								</div>
+								<span class="card-title">holzfällen</span>
+								<div class="card-content">
+									<p>professionelles und sicheres holzfällen</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-image">
+									<img class="img-responsive" src="img/27.jpg"">
+								</div>
+								<span class="card-title">spezialanfertigungen</span>
+								<div class="card-content">
+									<p>alle individuellen wünsche oder ähnliche sonderanfertigungen sind möglich</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 hidden-sm hidden-xs">
+							<div class="card">
+								<div class="card-image">
+									<img class="img-responsive" src="img/2.jpg">
+								</div>
+								<span class="card-title">kücheneinbau</span>
+								<div class="card-content">
+									<p>professioneller kücheneinbau</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="section5">
+				<div class="container">
+					<h2>kontakt</h2>
+					<div class="col-sm-6 center-column">
+						<div class="contact-address" id="contact-contact">
+							<address>
+								<p>
+									<span>karlheinz</span> müller
+								</p>
+								<strong>
+									schlesierstraße 14<br>
+									85386 eching<br>
+									bayern<br>
+								</strong>
+							</address>
+							<address>
+								<strong>
+									telefon: 0152 02991306<br>
+									fax: 089 41251249<br>
+									mail: info@kare.bayern<br>
+								</strong>
+							</address>
+							<div class="contact-buttons">
+								<!-- <a type="button" class="btn btn-primary btn-lg" target="_blank" href="https://www.facebook.com/kare.mueller?fref=ts">facebook</a><br> -->
+								<a type="button" href="mailto:info@kare.bayern" class="btn btn-success btn-lg">e-mail</a><br>
+								<a type="button" href="tel:015202991306" class="btn btn-primary btn-lg">anruf (mobile)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- footer -->
+		<footer class="tortugafooter d-flex flex-row align-items-center">
+			<nav class="navbar mr-auto ml-auto">
+				<div class="">
+					<b><a href="impressum.html" class="link-transform mb-5">Impressum</a></b> | <b><a href="privacy.html" class="link-transform mb-5">Datenschutzerklärung</a></b><br>
+				</div>
+			</nav>
+		</footer>
+	</body>
+	</html>
